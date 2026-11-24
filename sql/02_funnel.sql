@@ -3,8 +3,7 @@
 -- WHAT : Overall purchase funnel with step-to-step conversion and drop-off.
 -- WHY  : Shows WHERE in the journey most sessions are lost, which is
 --        the first half of the core question ("where is the leak?").
--- SCAN : Reads only ga4_portfolio.sessions. Record the validator estimate
---        here: [ ] MB.
+-- SCAN : Reads only ga4_portfolio.sessions. Validator estimate: 1.37 MB.
 -- =====================================================================
 --
 -- FUNNEL DEFINITION (write this in your data notes)
