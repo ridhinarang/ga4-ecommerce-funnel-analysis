@@ -6,7 +6,7 @@
 -- SCAN : Reads only ga4_portfolio.sessions. Validator estimate: 1.37 MB.
 -- =====================================================================
 --
--- FUNNEL DEFINITION (write this in your data notes)
+-- FUNNEL DEFINITION
 --   * Unit = session.
 --   * "Strict" funnel: a session counts at a step only if it ALSO did
 --     every earlier step in the same session. This keeps each step a
@@ -73,7 +73,7 @@ SELECT * FROM ga4_portfolio.dash_funnel ORDER BY step_order;
 -- CHECK: strict vs loose funnel
 -- "Loose" = sessions that did the event at all, regardless of earlier steps.
 -- If loose purchases >> strict purchases, many purchases skip tracked
--- steps (a tracking gap, not customer behaviour). Note it in data notes.
+-- steps (a tracking gap, not customer behaviour).
 -- =====================================================================
 SELECT
   COUNTIF(has_purchase)                                                     AS loose_purchase_sessions,
