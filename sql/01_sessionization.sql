@@ -9,7 +9,7 @@
 --
 -- SCAN : Reads required columns from 92 daily GA4 event tables.
 --        Uses date filters and selected columns to control query costs.
---        Estimated scan: approximately 1.17 GB (verify in BigQuery).
+--        Estimated scan: approximately 1.17 GB (verified in BigQuery).
 --        BigQuery free tier: 1 TB of query processing per month.
 --
 -- RUN  : Run once. Re-run only if the session definition changes.
